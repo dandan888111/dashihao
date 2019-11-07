@@ -1,0 +1,218 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+.inviteCode{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: linear-gradient(224deg,rgba(253,106,16,1) 0%,rgba(255,53,0,1) 100%);
+}
+.inviteCode0,.inviteCode1{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('https://osscdn.huiyidabai.com/suan/suanWeb/img/inviteCode4.png') no-repeat;
+  background-position: top right;
+  background-size: 300px;
+}
+.inviteCode01,.inviteCode02{
+  width: 100%;
+  height:5.32rem;
+  position: absolute;
+  top:50%;
+  /* transform: translateY(-50%); */
+  transform: translateY(-50%);
+  background:  url('https://osscdn.huiyidabai.com/suan/suanWeb/img/inviteCode3.png') no-repeat;
+  background-position: top left;
+  background-size: contain;
+}
+.inviteCode02{
+  background: none;
+}
+.inviteCode01-box{
+  width: 2.87rem;
+  height:2.39rem;
+  /* position:relative;
+  margin-top: 1.38rem; */
+  position: absolute;
+  bottom:0;
+  left:50%;
+  transform: translateX(-50%);
+  border: .08rem solid #FFA63D;
+  border-radius: .1rem;
+  background:#FFA63D;
+  font-size: 0;
+  box-shadow:0px 2px 4px 0px rgba(0,0,0,0.15);
+}
+.inviteCode01-box-1,.inviteCode01-box-2{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 2.87rem;
+  height:2.39rem;
+  background: #fff;
+  border-radius: .1rem;
+}
+.inviteCode01-box-2{
+  text-align: center;
+}
+.inviteCode01-box-1>p,.inviteCode01-box-1>input,.inviteCode01-box-2>p{
+  width: 2.63rem;
+  margin-left: .12rem;
+}
+.inviteCode01-box-1>p:first-of-type{
+  color:#333333;
+  font-size: .16rem;
+  line-height: .22rem;
+  padding-top: .2rem;
+  text-align: center;
+  background:  url(https://osscdn.huiyidabai.com/suan/suanWeb/img/inviteCode0.png) no-repeat;
+  background-size: 1.81rem .15rem;
+  background-position: bottom;
+}
+.inviteCode01-box-1>input{
+  padding-top: .21rem;
+  background: #F0F4FF;
+  padding: .1rem .2rem;
+  width: calc(100% - .4rem - .24rem);
+  border:none;
+  color:#333;
+  border-radius: .08rem;
+  margin-top: .21rem;
+  font-size: .16rem;
+  line-height: .22rem;
+}
+input::-webkit-input-placeholder{
+  color:#CBC8D0;
+}
+.inviteCode01-box-1>p:nth-of-type(2),.inviteCode01-box-2>p:nth-of-type(2){
+  margin-top: .2rem;
+  padding: .1rem 0;
+  text-align: center;
+  font-size: .18rem;
+  line-height: .25rem;
+  background:linear-gradient(360deg,rgba(253,179,2,1) 0%,rgba(252,228,15,1) 100%);
+  border-radius:.28rem;
+  color:#371716;
+  font-weight: 500;
+  box-shadow:0px 3px 3px 0px #F77808;
+}
+.inviteCode01-box-1>p:nth-of-type(3){
+  margin-top: .16rem;
+  font-size: .12rem;
+  line-height: .17rem;
+  color: #999;
+}
+.inviteCode01-box-2>img{
+  width: .59rem;
+  height:.59rem;
+  margin-top: .25rem;
+}
+.inviteCode01-box-2>p:nth-of-type(1){
+  font-size: .16rem;
+  line-height: .22rem;
+  color: #333;
+  margin: .15rem 0 .12rem .12rem;
+  font-weight: 500;
+}
+.inviteCode01-box-2>p:nth-of-type(2){
+  margin-top: .32rem;
+}
+
+.inviteCode02 .inviteCode01-box-1>h3{
+  color:#FE6506;
+  letter-spacing: .05rem;
+  font-size: .36rem;
+  line-height: .5rem;
+  margin: .2rem 0;
+  font-weight: 600;
+}
+.inviteCode02 .inviteCode01-box-1>p:nth-of-type(1){
+  background: none;
+  color:#333;
+  font-size: .18rem;
+  line-height: .25rem;
+  margin-top: .09rem;
+}
+.inviteCode02 .inviteCode01-box-1>p:nth-of-type(3){
+  font-size: .18rem;
+  line-height: .25rem;
+  color: #333;
+  margin-top: .3rem;
+}
+.inviteCode02{
+  font-size: 0;
+  text-align: center;
+  height: 4.67rem;
+}
+.inviteCode02>p:first-of-type{
+  color: #fff;
+  font-size: .22rem;
+  line-height: .3rem;
+  width: 100%;
+}
+.inviteCode02>p:nth-of-type(2)>img{
+  width: .62rem;
+  height: .62rem;
+  margin-top: .2rem;
+  border-radius: 50%;
+}
+.inviteCode02>p:nth-of-type(2)>span{
+  margin-top: .1rem;
+  font-size: .21rem;
+  line-height: .28rem;
+  display: block;
+  color:#fff;
+}
+.inviteCode02 > .inviteCode01-box{
+  margin-top: .2rem;
+  width: calc(100% - .4rem - .16rem);
+  height:2.81rem;
+}
+.inviteCode02 > .inviteCode01-box >.inviteCode01-box-1{
+  width: 100%;
+  height:100%;
+}
+.inviteCode02 > .inviteCode01-box >.inviteCode01-box-1>p{
+  margin-left: .35rem;
+  width: calc(100% - .7rem);
+}
+
+.inviteCode01-copy{
+  margin-top: 1.5rem;
+  text-align: center;
+  width:100%;
+  font-size: 0;
+}
+.inviteCode01-copy>span{
+  font-size: .14rem;
+  line-height: .2rem;
+  color:#FFF8D1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a{}

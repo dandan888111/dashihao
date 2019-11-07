@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>我的邀请码</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="/css/indexTel.css">
+    <link rel="stylesheet" href="/css/indexInviteCode.css">
+
+    <script>
+        var offWidth = window.screen.width / 3.75;
+        document.getElementsByTagName("html")[0].style.fontSize = offWidth + 'px';
+    </script>
+    <script src="https://res2.wx.qq.com/open/js/jweixin-1.4.0.js" charset="utf-8"></script>
+    <script src="/js/jquery-1.11.3.min.js" charset="utf-8"></script>
+    <script src="/js/clipboard.js" charset="utf-8"></script>
+    <script src="/js/config.js" charset="utf-8"></script>
+    <script src="/js/wx.js" charset="utf-8"></script>
+    <script src="/js/indexTel.js" charset="utf-8"></script>
+    <script src="/js/indexInviteCode.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+  <div class="inviteCode">
+    <div class="inviteCode0">
+      <div class="inviteCode01">
+        <div class="inviteCode01-copy">
+          <span>我的邀请码：</span><span></span><span class="inviteCodeMine">（点击复制）</span>
+        </div>
+        <div class="inviteCode01-box">
+          <div class="inviteCode01-box-1">
+            <p>填写邀请码</p>
+            <input type="text" name="" value="" placeholder='填写邀请码'>
+            <p class='saveFather'>领取奖励</p>
+            <p>注意：你只能与一位好友的邀请码进行绑定，请确认填写正确</p>
+          </div>
+          <div class="inviteCode01-box-2">
+            <img src="img/inviteCode2.png" alt="">
+            <p>绑定成功，你已获得1元奖励</p>
+            <p class="goWithdrawal">去提现</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="inviteCode02">
+        <p>你已经成功绑定，你的邀请人是：</p>
+        <p class="inviteCode02-father">
+          <img src="inviteCode.html" alt=""><br>
+          <span>123</span>
+        </p>
+        <div class="inviteCode01-box">
+          <div class="inviteCode01-box-1">
+            <p>你的邀请码</p>
+            <h3></h3>
+            <p class="inviteCode01-copy-text" data-clipboard-text=''>复制</p>
+            <p>去收徒，赚取更多利益</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 手机号 -->
+  <div class="bindNumber">
+      <div class="bindNumberC">
+          <p>绑定手机号</p>
+          <p class="mobileNumber">
+              <img src="img/tel.png" alt="">
+              <input type="text" name="" value="" placeholder="请输入您的手机号">
+          </p>
+          <p class="mobileCode">
+              <img src="img/code.png" alt="">
+              <input type="text" name="" value="" placeholder="请输入验证码"  maxlength = "6">
+              <span>获取验证码</span>
+          </p>
+          <p class="sendNumber">绑定</p>
+      </div>
+  </div>
+</body>
+
+</html>

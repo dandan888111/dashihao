@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>大师好</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <link rel="stylesheet" href="assets/css/lCalendar.css">
+
+    <link rel="stylesheet" href="assets/css/LArea.css">
+    <link rel="stylesheet" href="assets/css/vadio.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script>
+        var _hmt = _hmt || [];
+        var offWidth = window.screen.width / 3.75;
+        document.getElementsByTagName("html")[0].style.fontSize = offWidth + 'px';
+    </script>
+
+    <script src="https://res2.wx.qq.com/open/js/jweixin-1.4.0.js" charset="utf-8"></script>
+    <script src="https://qzonestyle.gtimg.cn/qzone/qzact/common/share/share.js" charset="utf-8"></script>
+    <script src="assets/js/wx.js" charset="utf-8"></script>
+    <script src="assets/lib/jquery-1.11.3.min.js" charset="utf-8"></script>
+    <script src="assets/lib/axios.min.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/lib/animate.js" charset="utf-8"></script>
+    <script src="assets/js/mustache.js" charset="utf-8"></script>
+    <script src="assets/js/conf.js" charset="utf-8"></script>
+    
+    <script src="assets/lib/lCalendar.min.js" charset="utf-8"></script>
+    <script src="assets/js/lCalendar.js" charset="utf-8"></script>
+    <script src="assets/lib/LArea.min.js" charset="utf-8"></script>
+    <script src="assets/js/LAreaData1.js" charset="utf-8"></script>
+    <script src="assets/js/LArea.js" charset="utf-8"></script>
+    <script src="assets/js/index.js" charset="utf-8"></script>
+    <style media="screen">
+        body {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 0;
+        }
+
+        .suan1,
+        .loading,
+        .pay,
+        .suan2,
+        #zwResultDiv,
+        .gifMin {
+            display: none;
+        }
+
+        .shenhe {
+            font-size: 0;
+        }
+
+        .shenhe>p {
+            width: 90%;
+            margin-left: 5%;
+            text-align: center;
+            font-size: 16px;
+            margin-top: .1rem;
+            color: #fff;
+        }
+
+        .shenhe>div {
+            width: 100%;
+            padding: 15px 0;
+            font-size: 18px;
+            background: #f0be57;
+            text-align: center;
+            color: #fff;
+            margin-top: .3rem;
+        }
+        
+        
+
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="suan0">
+        <div id="stars">
+            <div class="star"></div>
+        </div>
+
+        <div class="suan0-bottom">大师好</div>
+        <div class="suan-content">
+            <div class="suan-content-top">
+                <img src="assets/img/img.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="luckShade">
+        <div class="luckShade-card">
+            <p>今日运势内测中</p>
+            <p>今日运势功能正在火爆内测，获取内测资格可联系管理员，管理员微信号：duosuansuan</p>
+            <img src="assets/img/suanqr.jpg?a=2" alt="">
+            <p>长按二维码保存相册，打开微信添加好友</p>
+        </div>
+        <img class="close_luckShade" src="assets/img/close.png" alt="">
+    </div> -->
+
+    <div class="suan1">
+        <img src="assets/img/network.png" zhuan ="">
+        <p>网络异常</p>
+        <p>网络不给力，请检查网络</p>
+        <p>重新加载</p>
+    </div>
+
+    <div class="loading">
+        <img src="assets/img/loading.png" alt="">
+    </div>
+
+    <!--  运势报告 -->
+    <div class="suan2">
+        <div class="suan2-content">
+            <div class="suan2-title">
+                <script id="jTmpl_result_title" type="text/tmpl">
+                    {{{{raw}}}}
+                        <p>{{name}}的运势报告</p><p>{{isSolarDate}} {{birth}}</p>
+                    {{{{/raw}}}}
+                </script>
+            </div>
+            
+            <div class="result-list result-list_fate">
+                <script id="jTmpl_result_fate" type="text/tmpl">
+                    {{{{raw}}}}
+                    <div class="result-title">命运格局</div>
+                    <div class="result-content">
+                        <p class="des-1">人工智能经过计算得出命运指数：</p>
+                        <span class="score pay-fail"><span class="number">?</span>分</span>
+                        <span class="u-load pay-fail"><i style="width: 0%;"></i></span>
+                        <span class="score pay-ok"><span class="number">{{score}}</span>分</span>
+                        <span class="u-load pay-ok"><i style="width: {{score}}%;"></i></span>
+                        <p class="des-2">{{txt}}</p>
+                        <a href="javascript:void(0)" class="result-pay-btn">立即查看</a>
+                    </div>
+                    {{{{/raw}}}}
+                </script>
+            </div>
+
+            <div class="result-list result-list-yearFortue">
+                <script id="jTmpl_result_yearFortue" type="text/tmpl">
+                    {{{{raw}}}}
+                    <div class="result-title">{{typeName}}</div>
+                    <div class="result-content">
+                        <p class="des-1">大数据对比分析你今年事业运吉凶情况：</p>
+                        <span class="score"><span class="number">{{fateName}}</span></span>
+                        <p class="des-2">{{txt}}</p>
+                        <a href="javascript:void(0)" class="result-pay-btn">立即查看</a>
+                    </div>
+                    {{{{/raw}}}}
+                </script>
+            </div>
+
+            <div class="result-list result-list-yearAdvice">
+                <script id="jTmpl_result_yearAdvice" type="text/tmpl">
+                    {{{{raw}}}}
+                    <div class="result-title">改运方案</div>
+                    <div class="result-content">
+                        <p class="des-2">{{txt}}</p>
+                        <a href="javascript:void(0)" class="result-pay-btn">立即查看</a>
+                    </div>
+                    {{{{/raw}}}}
+                </script>
+            </div>
+
+            <div class="result-list result-list-fateAdvice">
+                <script id="jTmpl_result_fateAdvice" type="text/tmpl">
+                    {{{{raw}}}}
+                    <div class="result-title">命运建议</div>
+                    <div class="result-content">
+                        <p class="des-2">{{txt}}</p>
+                        <a href="javascript:void(0)" class="result-pay-btn">立即查看</a>
+                    </div>
+                    {{{{/raw}}}}
+                </script>
+            </div>
+        </div>
+
+        <div class="suan2-pay-bottom">
+            <div class="fl">
+                <p class="des-1">解锁今年<span>全部</span>运势！</p>
+                <p class="des-2"><span class="ori-price">原价 ￥88.8</span> <span>限时优惠 ￥</span></span><span class="new-price">18.8</span></span></p>
+            </div>
+            <div class="fr">立即支付</div>
+        </div>
+
+        <!-- <div class="suan2-suan-continus-btn">点我查看全部答案的样式</div> -->
+    </div>
+
+    <!--  支付弹窗 -->
+    <div class="pay">
+        <div style="position: fixed;width: 100%;height: 100%;background-color: rgba(0,0,0,.5);"></div>
+        <div style="background: #fff;height: 3.73rem;position: fixed;left:0;z-index:10;width:100%;border-radius: .2rem .2rem 0 0;bottom:0;">
+            <div class="pay-title">
+                <p>
+                    <span>支付</span>
+                    <img class="pay-back" src="assets/img/close1.png" alt="">
+                </p>
+                <p>
+                    <span>8.8<span style="font-size:.18rem;">元</span></span>
+                    <span class="pay-hint">当前算爱情的用户给出的反馈，准确率为99%！</span>
+                </p>
+            </div>
+            <div class="pay-change">
+                <p type='1'>
+                    <img src="assets/img/wIcon.png" alt="">
+                    <span>微信支付</span>
+                    <img style="border:none;width:.21rem;height:.21rem" src="assets/img/end.png" alt="">
+                </p>
+                <!-- <p type='2'>
+            <img src="./img/zIcon.png" alt="">
+            <span>支付宝支付</span>
+            <img src="" alt="">
+          </p> -->
+            </div>
+            <div class="pay-btn pay-h5"><a href="javascript:void(0);" target="_blank" style="height:100%;width:100%">确认支付</a></div>
+        </div>
+    </div>
+
+    <!--  命盘 -->
+    <div id="zwResultDiv">
+        <p style="position:relative" class="header">
+            <img class="back-btn" src="assets/img/backW.png" alt="" style="">
+            <span>紫微命盘</span>
+        </p>
+        <div style="height:.1rem;"></div>
+        <div class="chart_map"></div>
+    </div>
+    <script>
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?a26a335dedc521ace7cd34ba23e25d6b";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+    window.onload = function(){
+        var stars = document.getElementById('stars');  //获取stars Box
+        var star = document.getElementsByClassName('star');  //获取全部流星
+        var mywidth = document.documentElement.clientWidth;  //获取当前可视宽度
+        var myheight = document.documentElement.clientHeight;  //获取当前可视高度
+
+        //初始化流星个数 和 left,top值
+        for(let i = 0;i < 5;i++){
+            let newStar = document.createElement('div');
+            newStar.className = "star"
+            newStar.style.top = randomNumber(myheight*.3, -myheight*.2) + 'px'
+            newStar.style.left = randomNumber(mywidth*1.3, 0) + 'px'
+            stars.appendChild(newStar)
+        }
+
+        //封装随机数函数
+        function randomNumber (max, min) {
+            let randomnum = Math.floor(Math.random() * (max - min + 1) + min)
+            return randomnum
+        }
+
+        // 给流星添加动画延时
+        for (let i = 0, len = star.length; i < len; i++)
+        {
+            star[i].style.animationDelay = i % 6 == 0 ? '0s' : i * 0.8 + 's';
+        }
+    }
+
+
+    </script>
+
+</body>
+
+
+</html>

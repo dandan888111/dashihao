@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>大师好-分佣后台-首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <script>
+        var offWidth = window.screen.width / 3.75;
+        document.getElementsByTagName("html")[0].style.fontSize = offWidth + 'px';
+    </script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/back-index.css">
+    <script src="../lib/jquery-1.11.3.min.js" charset="utf-8"></script>
+    <script src="https://res2.wx.qq.com/open/js/jweixin-1.4.0.js" charset="utf-8"></script>
+    <script src="../js/clipboard.js"></script>
+</head>
+<body>
+    <div class="page-header" style="display:none">
+        <img src="../img/backB.png" class="back" action-type="back-history" />
+        <p class="page-title cl333 fz18">代理大师</p>
+    </div>
+    <div class="wp" style="display: none">
+        <div class="header-wrap">
+            <script id="userInfoTpl" type="text/tmpl">
+                <img class="fl" src="{{avctor}}" />
+                <p class="name fl cl333 fz16">{{userName}}</p>
+            </script>
+        </div>
+        <div class="money-wrap" style="display:none">
+            <div class="box">
+                <a href="back-profit.html" class="fl">
+                    <p class="cl333 fz16">我的收益</p>
+                    <span class="cl-red fz20">16.23<b class="fz10">元</b></span>
+                </a>
+                <a href="back-advance.html" class="fl">
+                    <p class="cl333 fz16">提现</p>
+                    <span class="cl-red fz20">16.23<b class="fz10">元</b></span>
+                </a>
+                <a href="back-family.html" class="fl">
+                    <p class="cl333 fz16">我的家族</p>
+                    <span class="cl-red fz20">7<b class="fz10">元</b></span>
+                </a>
+            </div>
+        </div>
+        <div class="extend-wrap image-extend">
+            <div class="header">
+                <p class="fl cl333 fz18">我的推广图片：</p>
+                <span class="change-btn fr cl333 fz14" action-type="change-image">换一换</span>
+            </div>
+            <div class="line"></div>
+            <div class="save-des cl999">长按图片保存到相册</div>
+            <img src="https://www.nihaodashi.com/dashihao/assets/img/fe-promote.jpg" class="save-image" node-type="extend-image"/>
+        </div>
+        <div class="extend-wrap">
+            <div class="header">
+                <p class="fl cl333 fz18">朋友圈文案：</p>
+                <span class="change-btn fr cl333 fz14" action-type="change-intro">换一换</span>
+            </div>
+            <span class="des cl666 fz14" node-type="extend-intro"></span>
+            <span class="copy-btn clfff fz16" node-type="copy-intro-btn" action-type="copy-btn" data-clipboard-text="">一键复制</span>
+        </div>
+        <div class="extend-wrap">
+            <div class="header">
+                <p class="fl cl333 fz18">我的推广链接（可直接点击后分享）：</p>
+            </div>
+            <a class="cl999 promote-url" href="https://www.nihaodashi.com/dashihao"  node-type="extend-jump-url"></a>
+            <!--<span class="des cl999 fz16" node-type="extend-url">https://www.nihaodashi.com/dashihao</span> -->
+            <span class="copy-btn clfff fz16" action-type="copy-btn" node-type="extend-url-copy" data-clipboard-text="https://www.nihaodashi.com/dashihao">一键复制</span>
+        </div>
+        <a class="promote-data-btn clfff fz16" href="https://www.nihaodashi.com/dashihao/assets/html/dsorder-3.html?source=32457" node-type="promote-data-url" style="margin-top:30px;" href="">我的推广数据</a>
+    </div>
+    <div class="tips">
+        请允许微信授权后，才能获取推广链接赚钱哦~~
+    </div>
+</body>
+<script src="../lib/axios.min.js"></script>
+<script src="../js/mustache.js"></script>
+<script src="../js/back-common.js"></script>
+<script src="../js/back-index.js"></script>
+</html>

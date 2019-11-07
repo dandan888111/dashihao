@@ -1,0 +1,307 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 0;
+}
+
+.withdrawal {
+    width: 100%;
+    background: #fff;
+}
+
+.withdrawal-top {
+    width: calc(100% - .8rem);
+    margin: .2rem;
+    padding: 0 .2rem;
+    color: #FF4D4F;
+    font-size: .16rem;
+    line-height: .2rem;
+}
+
+.withdrawal-top>p:first-of-type {
+    width: 100%;
+    text-align: center;
+}
+
+.withdrawalBtn {
+    padding: .1rem 0;
+    width: .82rem;
+    border-radius: .2rem;
+    background: #e0e0e0;
+    text-align: center;
+}
+
+.withdrawalBtnColor {
+    background: #FFB200;
+}
+
+.withdrawal-tab {
+    width: calc(100% - .6rem);
+    margin: .2rem .2rem 0 .2rem;
+    background: #F7F8FA;
+    padding: .05rem .1rem;
+    font-size: 0;
+    border-radius: .05rem;
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+.withdrawal-tab>p {
+    display: inline-block;
+    width: 50%;
+    font-size: .16rem;
+    padding: .07rem 0;
+    text-align: center;
+    line-height: .22rem;
+    border-radius: .04rem;
+    color: #333333;
+}
+
+.withdrawal-tab>p:first-of-type {
+    background: #fff;
+}
+
+.withdrawal-c, .withdrawalList {
+    margin-top: .86rem;
+}
+
+.withdrawalList::-webkit-scrollbar, .withdrawal-c::-webkit-scrollbar {
+    display: none;
+}
+
+.withdrawal-c-title0, .withdrawal-c-mobiel, .withdrawal-money, .withdrawal-attention, .withdrawal-list {
+    width: calc(100% - .4rem);
+    margin: 0 .2rem;
+}
+
+.withdrawal-c-title0 {
+    font-size: .16rem;
+    line-height: .22rem;
+    color: #333;
+}
+
+.withdrawal-c-title0>span, .withdrawal-c-title0>img {
+    vertical-align: middle;
+}
+
+.withdrawal-c-title0>img {
+    width: .17rem;
+    height: .17rem;
+}
+
+.withdrawal-c-mobiel {
+    margin-top: .2rem;
+    font-size: 0;
+    margin-bottom: .2rem;
+}
+
+.withdrawal-c-mobiel>input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: .13rem .1rem;
+    font-size: .14rem;
+    line-height: .2rem;
+    -webkit-appearance: none;
+    box-shadow: 0px 2px 10px 0px rgba(50, 64, 87, 0.15);
+    border-radius: 8px;
+    width: calc(100% - .2rem);
+    color: #333;
+}
+
+input::-webkit-input-placeholder {
+    color: #CCCCCC;
+}
+
+.withdrawal-money {
+    margin-top: .2rem;
+    font-size: .24rem;
+    line-height: .33rem;
+}
+
+.withdrawal-money-span {
+    display: inline-block;
+    width: calc((100% - .12rem - .18rem) / 3);
+    border: 2px solid #fff;
+    padding: .25rem 0;
+    text-align: center;
+    border-radius: .08rem;
+    margin-bottom: .15rem;
+    font-weight: 500;
+    box-shadow: 0px 2px 10px 0px rgba(50, 64, 87, 0.15);
+    color: #333333;
+    font-weight: 600;
+}
+
+.withdrawal-attention {
+    color: #ADB3B6;
+    font-size: .12rem;
+    line-height: .17rem;
+    margin-top: .05rem;
+    /* margin-bottom: .8rem; */
+}
+
+.withdrawal-attention>p {
+    margin-bottom: .05rem;
+}
+
+.withdrawal-attention>p:first-of-type {
+    font-size: .14rem;
+    line-height: .2rem;
+}
+
+.withdrawalList-title {
+    width: 100%;
+    text-align: center;
+}
+
+.withdrawalList-title>p:first-of-type {
+    color: #FF4D4F;
+    font-size: .16rem;
+    line-height: .2rem;
+    margin-top: .2rem;
+}
+
+.withdrawalList-title>p:first-of-type>span {
+    font-size: .36rem;
+    line-height: .5rem;
+    margin-right: .1rem;
+    font-weight: 600;
+}
+
+.withdrawalList-title>p:nth-of-type(2) {
+    font-size: .16rem;
+    line-height: .22rem;
+    color: #333;
+}
+
+.withdrawal-list {
+    margin-top: .2rem;
+    font-size: 0;
+}
+
+.withdrawal-list-min {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: .01rem solid #F2F2F2;
+    padding: .2rem 0;
+}
+
+.withdrawal-list-min>p {
+    width: 50%;
+}
+
+.withdrawal-list-min>p:first-of-type>span:first-of-type {
+    font-size: .14rem;
+    line-height: .2rem;
+    font-weight: 500;
+}
+
+.withdrawal-list-min>p:first-of-type>span:nth-of-type(2) {
+    font-size: .1rem;
+    line-height: .14rem;
+    color: #B6B6B6;
+}
+
+.withdrawal-list-min>p:nth-of-type(2) {
+    color: #333333;
+    font-size: .14rem;
+    line-height: .2rem;
+    text-align: right;
+    font-weight: 600;
+}
+
+
+/* 置灰 */
+
+.canNotClickMoney {
+    background: #fff;
+    border: 2px solid #fff;
+    color: #e0e0e0;
+}
+
+.clickMoney {
+    border: 2px solid #FF8A00;
+    background: rgba(255, 138, 0, 0.1);
+}
+
+
+/* 遮罩 */
+
+.withdrawalShade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 10;
+    display: none;
+}
+
+.withdrawalShade-div {
+    width: 278px;
+    /* height: 218px; */
+    background: #fff;
+    border-radius: .1rem;
+    position: absolute;
+    top:50%;
+    left: calc((100% - 278px) / 2);
+    transform: translateY(-50%);
+}
+
+.withdrawalShade-div>p {
+    width: calc(100% - .1rem);
+    margin-left: .05rem;
+    text-align: center;
+}
+
+.withdrawalShade-div>p:first-of-type {
+    margin-top: .2rem;
+    font-size: .16rem;
+    line-height: .25rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.withdrawalShade-div>p:nth-of-type(2) {
+    margin-top: .1rem;
+    font-size: .14rem;
+    line-height: .2rem;
+    color: #666;
+    width: calc(100% - .4rem);
+    margin-left: .2rem;
+    text-align: left;
+}
+
+.withdrawalShade-div>p:nth-of-type(3) {
+    margin-top: .2rem;
+    font-size: .16rem;
+    color: #FF4D4F;
+    line-height: .22rem;
+    padding: .1rem 0;
+    border-top: 1px solid #F2F2F2;
+}
+
+.withdrawalBtn {
+    position: fixed;
+    bottom: .2rem;
+    width: 3.05rem;
+    color: #fff;
+    font-size: .18rem;
+    line-height: .25rem;
+    padding: .1rem 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .24rem;
+    background: #FFB8B9;
+    z-index: 10;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>大师好</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <link rel="stylesheet" href="assets/css/index-dialog.css">
+    <link rel="stylesheet" href="assets/css/lCalendar.css">
+    <script>
+        var _hmt = _hmt || [];
+        var offWidth = window.screen.width / 3.75;
+        document.getElementsByTagName("html")[0].style.fontSize = offWidth + 'px';
+    </script>
+</head>
+
+<body>
+
+    <div id="capture" class="suan2 result pay-success" style="display: block;">
+        <div class="suan2-content">
+            <div class="suan2-title">
+                <p>我的朋友的运势报告</p>
+                <p>阳历 1990-01-01 不清楚时辰</p>
+            </div>
+            <div class="dashi dashi-intro">
+                <p class="name">李丹庆</p>
+                <p class="intro">
+                    太乙派第十五代传人，研究太乙神数、奇门遁甲、紫微斗数30余年，在易学领域有极高的威望，亲自测算案例已达数万人。现与人工智能产品“大师好”达成独家战略合作，帮助更多用户探寻天命。</p>
+            </div>
+            <p class="dashi start-des-4">已为 <span style="color: #D22F37" class="renshu">13133164</span> 人提供服务</p>
+            <div class="result-list result-list-yearFortue">
+                <div class="result-title">夫妻</div>
+                <div class="result-content">
+                    <p class="des-1">大数据对比分析你今年夫妻运吉凶情况：</p>
+                    <span class="score"><span class="number">大吉</span></span>
+                    <p class="des-2">
+                        夫妻性情相投，婚姻美满，爱人多才多艺，夫妻能相互鼓励，事业有成。对选择爱人的眼光较高，股不宜早婚，如果晚婚，则婚姻变化小，爱人贤德，有责任感，但含有孤意，即自己会有被压制的感觉。夫妻在年龄、学识、家世、面貌上不相称，会为人夺爱，为情所困，婚前多波折则婚后少事端，恋爱婚姻顺利则婚后多事端。爱情不专，感情多变，多风波，爱人有外遇。
+                    </p>
+                    <a href="javascript:void(0)" class="result-pay-btn">立即查看</a>
+                </div>
+            </div>
+            <div class="result-list result-list_fate">
+                <div class="result-title">命运格局</div>
+                <div class="result-content">
+                    <p class="des-1">人工智能经过计算得出命运指数：</p>
+                    <span class="score pay-fail"><span class="number">?</span>分</span>
+                    <span class="u-load pay-fail"><i style="width: 0%;"></i></span>
+                    <span class="score pay-ok"><span class="number">94.0</span>分</span>
+                    <span class="u-load pay-ok"><i style="width: 94.0%;"></i></span>
+                    <p class="des-2">
+                        智勇双全，多学多能，不善言辞，野心大，傲气，喜做大事情，有创劲，一生多动少静，先打工后自立致富，发财于远乡，多为富商，名利双收。谨防财务纠纷，否则会破财或被诈骗，甚则为财送命</p>
+                    <a href="javascript:void(0)" class="result-pay-btn">立即查看</a>
+                </div>
+            </div>
+            <div class="result-list result-list-yearAdvice">
+                <div class="result-title">改运方案</div>
+                <div class="result-content">
+                    <p class="des-2">你和你的配偶个性都较为刚强，意见有相左之处，注意互相忍让，避免争吵和矛盾，才能保持婚姻美满。</p>
+                    <a href="javascript:void(0)" class="result-pay-btn">立即查看</a>
+                </div>
+            </div>
+            <div class="result-list result-list-fateAdvice">
+                <div class="result-title">命运建议</div>
+                <div class="result-content">
+                    <p class="des-2">宜离乡发展，贵人在远方，对票据、契约要小心，提防钱财方面的纠葛。</p>
+                    <a href="javascript:void(0)" class="result-pay-btn">立即查看</a>
+                </div>
+            </div>
+            <div class="qrcontainer" style="text-align:center;display:none;">
+                <div id="qrcode" style="margin: 20px auto 10px;" div></div>
+                <p> 长按识别二维码进行命运测算 </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="downloadBtn" style="margin: 20px auto; color: #AF3428;text-align:center;">保存图片到相册</div>
+    <script src="assets/lib/jquery-1.11.3.min.js" charset="utf-8"></script>
+    <script src="assets/lib/jquery.qrcode.min.js" charset="utf-8"></script>
+    <script src="assets/lib/html2canvas.min.js"></script>
+    <script>
+        $('.downloadBtn').on('click', function (e) {
+            $('.result-list .result-content .des-2').css({ display: 'block' })
+            $('#qrcode').qrcode({
+                width: 400,
+                height: 400,
+                text: "http://www.o-home.com/select/print"
+            });
+
+            // $('.qrcontainer').css({display: 'block'})
+            html2canvas(document.querySelector("#capture")).then(canvas => {
+                $('.result-list .result-content .des-2').css({ display: '-webkit-box' })
+                $('.qrcontainer').css({ display: 'none' })
+                let qrCanvas = $('#qrcode canvas')[0];
+                let width = canvas.width, height = canvas.height
+                var ctx = canvas.getContext("2d");
+                var data = ctx.getImageData(0, 0, width, height)
+                var qrData = qrCanvas.getContext("2d").getImageData(0, 0, 400, 400)
+
+                // 修改canvas高度
+                canvas.height = height = height + 440;
+                ctx.fillStyle = "#FCF5EB";
+                ctx.fillRect(0, 0, width, height);
+                ctx.putImageData(data, 0, 0);
+                ctx.putImageData(qrData, width - 800, height - 640);
+
+                // 绘制底部二维码和文字
+                ctx.fillStyle = "#B13529";
+                ctx.font = "40px '微软雅黑'";
+                ctx.fillText("长按识别二维码测试今年运势", width - 900, height - 140);
+
+                // var a = document.createElement("a");
+                // a.href = canvas.toDataURL({ format: "png" });
+                // a.download = name;
+                // a.click();
+                // $('#qrcode').html('')
+
+                var img = document.createElement("img");
+                img.src = canvas.toDataURL({ format: "png" });
+                img.style.width = "100%";
+                document.body.appendChild(img);
+
+                $('#qrcode').html('')
+
+            });
+        })
+    </script>
+</body>
+
+
+</html>

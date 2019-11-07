@@ -1,0 +1,135 @@
+
+
+.wp .header{
+    width: 3.14rem;
+    height: 0.35rem;
+    background: #F7F8FA;
+    border-radius: 0.05rem;
+    margin: 0.2rem auto; 
+    padding: 0.05rem 0.1rem;
+}
+.header span{
+    display: inline-block;
+    width: 1.53rem;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    text-align: center;
+}
+.header span.current{
+    background: #fff;
+}
+.all-money{
+    text-align: center;
+}
+.all-money .fz14{
+    display: inline-block;
+    margin-left: 0.08rem;
+}
+.des-1{
+    text-align: center;
+    margin-top: 0.05rem; 
+}
+.advance-box{
+    margin: 0.2rem auto 0;
+}
+.advance-box .list {
+    margin-top: 0.2rem;
+}
+.advance-box .list span{
+    display: inline-block;
+    width: 1.06rem;
+    height: 0.82rem;
+    margin: 0 0.04rem 0.15rem 0;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 2px 10px 0px rgba(50,64,87,0.15);
+    border-radius:8px;
+    color: #333;
+    font-size: 0.24rem;
+    text-align: center;
+    line-height: 0.82rem;
+}
+.advance-box .list span.mr-0{
+    margin-right: 0
+}
+.advance-box .list span.current{
+    width: 1.02rem;
+    height: 0.78rem;
+    line-height: 0.78rem;
+    background: rgba(255,77,79,0.1);
+    border: 0.02rem solid #FF4D4F;
+}
+.attention{
+    color: #ADB3B6;
+    line-height: 0.2rem;
+}
+.advance-btn{
+    width: 3.05rem;
+    height: 0.45rem;
+    margin: 0.2rem auto;
+    background:rgba(255,77,79,1);
+    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.2);
+    border-radius: 0.24rem;
+    text-align: center;
+    line-height: 0.45rem;
+}
+.advance-btn.disable{
+    background:rgba(255,184,185,1);
+    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.2);
+}
+
+
+/* 提现记录 */
+.history-list{
+    margin-top: 0.2rem;
+
+}
+.history-list .intro {
+    width: 3.35rem;
+    height: 0.70rem;
+    border-top: 1px solid #F2F2F2;
+}
+.history-list .intro .fl{
+    width: 2.5rem;
+    height: 0.70rem;
+    overflow: hidden;
+}
+.history-list .intro .fl .name{
+    margin-top: 0.15rem;
+}
+.history-list .intro .fl .name b{
+    font-weight: normal
+}
+.history-list .intro .fl .name span{
+    display: inline-block;
+    height: 0.17rem;
+    padding: 0 0.03rem;
+    margin: 0 0.03rem;
+    border-radius:2px;
+}
+.history-list .intro .fl .time{
+    display: inline-block;
+    margin-top: 0.05rem;
+    color: #CFCFCF;
+}
+.history-list .intro .fr{
+    margin-top: 0.28rem;
+}
+.history-list .intro.ing .name{
+    color: #FF4D4F;
+}
+/* 无提现记录 */
+.no-advance-his{
+    border-top: 1px solid #F2F2F2;
+}
+.no-advance-his img{
+    display: block;
+    width: 0.95rem;
+    height:1.1rem;
+    margin: 0.7rem auto 0.2rem;
+}
+.no-advance-his p{
+    margin: 0 auto;
+    text-align: center;
+    color: #BBBBBB;
+}
+

@@ -1,0 +1,81 @@
+h4{
+    margin: 0.2rem auto 0.15rem;
+    font-weight: normal;
+    text-align: center;
+}
+.money{
+    margin: 0 auto;
+    text-align: center;
+}
+.des-1{
+    margin: 0.15rem 0 0.14rem 0.2rem;
+}
+.list{
+    overflow: hidden;
+}
+
+.list .date{
+    width:100%;
+    height:0.28rem;
+    padding-left: 0.2rem; 
+    background: #FAFAFA;
+    line-height: 0.28rem;
+}
+.list .intro{
+    width: 3.35rem;
+    height: 0.70rem;
+    overflow: hidden;
+    border-bottom: 1px solid #F2F2F2;
+}
+.list .intro .fl{
+    width: 2.5rem;
+    height: 0.70rem;
+    overflow: hidden;
+}
+.list .intro .fl .name{
+    margin-top: 0.15rem;
+}
+.list .intro .fl .name b{
+    font-weight: normal
+}
+.list .intro .fl .name span{
+    display: inline-block;
+    height: 0.17rem;
+    padding: 0 0.03rem;
+    margin: 0 0.03rem;
+    border-radius:2px;
+}
+.list .intro .fl .time{
+    display: inline-block;
+    margin-top: 0.05rem;
+    color: #CFCFCF;
+}
+.list .intro .fr{
+    margin-top: 0.28rem;
+}
+
+.list .intro.isback .name b{
+    color: #CFCFCF
+}
+.list .intro.isback .money{
+    color: #CFCFCF
+}
+
+/* 无收益 */
+.no-profit{
+    border-top: 1px solid #F2F2F2;
+}
+.no-profit img{
+    display: block;
+    width: 0.95rem;
+    height:1.1rem;
+    margin: 0.7rem auto 0.2rem;
+}
+.no-profit p{
+    margin: 0 auto;
+    text-align: center;
+    color: #BBBBBB;
+}
+
+
+

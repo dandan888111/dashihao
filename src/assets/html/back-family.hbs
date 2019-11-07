@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>大师好-分佣后台-我的家族</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <script>
+        var offWidth = window.screen.width / 3.75;
+        document.getElementsByTagName("html")[0].style.fontSize = offWidth + 'px';
+    </script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/back-family.css">
+    <script src="../lib/jquery-1.11.3.min.js" charset="utf-8"></script>
+    <script src="../js/clipboard.js"></script>
+</head>
+<body>
+    <div class="page-header">
+        <img src="../img/backB.png" class="back" action-type="back-history" />
+        <p class="page-title cl333 fz18">我的家族</p>
+    </div> 
+    <div class="wp">
+        <div class="family-box my-code">
+            <h4 class="cl333 fz18">我的邀请码：</h4>
+            <p class="code cl-red fz24" node-type="my-code">6JD6A</p>
+            <span class="code-copy-btn cl333 fz12" action-type="copy-btn" data-clipboard-text="6JD6A">点击复制</span>
+        </div>
+        <div class="family-box">
+            <h4 class="cl333 fz18">我的师傅：<span class="cl999 fz12">（仅能填写一次，不可修改）</span></h4>
+            <div><input maxlength="8" type="text" placeholder="在此输入师傅的邀请码" class="input fz14" node-type="teacher"><span class="bind-btn" action-type="bind-btn">确定</span></div>
+            <!-- <div class="list">
+                <img class="fl" src="https://4img.hitv.com/preview/cms_icon/2019/3/27/03/20190327092832819.jpg_366x206.jpg" />
+                <span class="fl name cl333 fz14">奥特曼</span>
+                <span class="time fr cl333 fz14">2019-4-15</span>
+            </div> -->
+        </div>
+        <div class="family-box">
+            <h4 class="cl333 fz18">我的徒弟：</h4>
+            <div class="list">
+                <img class="fl" src="https://4img.hitv.com/preview/cms_icon/2019/3/27/03/20190327092832819.jpg_366x206.jpg" />
+                <span class="fl name cl333 fz14">奥特曼</span>
+                <span class="time fr cl333 fz14">2019-4-15</span>
+            </div>
+            <div class="more" action-type="more-family" type="tudi">
+                <p class="cl-red fz14">查看全部</p>
+                <img src="../img/show-all.png" />
+            </div>
+            <!-- <div class="no-data">
+                <img src="img/no-family.png" />
+                <p class="fz18">暂无徒弟，快去收徒赚钱吧</p>
+            </div> -->
+        </div>
+        <div class="family-box">
+            <h4 class="cl333 fz18">我的徒孙：</h4>
+            <div class="list">
+                <img class="fl" src="https://4img.hitv.com/preview/cms_icon/2019/3/27/03/20190327092832819.jpg_366x206.jpg" />
+                <span class="fl name cl333 fz14">奥特曼</span>
+                <span class="time fr cl333 fz14">2019-4-15</span>
+            </div>
+            <div class="more" action-type="more-family" type="tusun">
+                <p class="cl-red fz14">查看全部</p>
+                <img src="../img/show-all.png" />
+            </div>
+            <!-- <div class="no-data">
+                <img src="img/no-family.png" />
+                <p class="fz18">暂无徒孙，快去收徒赚钱吧</p>
+            </div> -->
+        </div>
+    </div>
+    <div class="bg-mask" node-type="dialog-mask" style="display: none"></div>
+    <div class="confirm-box" node-type="dialog-mask" style="display: none">
+        <h4 class="cl333 fz18">注意事项</h4>
+        <p class="cl666 fz14">仅能填写一次，不可修改，是否确定绑定<a class="teacher-name cl-red fz15" node-type="dialog-teacher-name"></a>为师徒关系?</p>
+        <span class="cl-red fz16" action-type="close-dialog">确定</span>
+    </div>
+</body>
+<script src="../js/back-common.js"></script>
+<script src="../js/back-family.js"></script>
+</html>

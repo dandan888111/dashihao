@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>测试code地址</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <script>
+        var offWidth = window.screen.width / 3.75;
+        document.getElementsByTagName("html")[0].style.fontSize = offWidth + 'px';
+    </script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/back-index.css">
+    <script src="../lib/jquery-1.11.3.min.js" charset="utf-8"></script>
+    <script src="../js/clipboard.js"></script>
+</head>
+<body>
+    <input type="text" value="" style="width:300px;height:200px;font-size:24px; font-weight:bold; margin-top:100px;">
+</body>
+<script src="https://res2.wx.qq.com/open/js/jweixin-1.4.0.js" charset="utf-8"></script>
+<script src="../lib/axios.min.js"></script>
+<script src="../js/back-common.js"></script>
+<script src="../js/back-index.js"></script>
+<script>
+    let config_openId = ''
+    if (is_neizhi() == 'weixin') {
+        wx_login(function(res) {
+            config_openId = res;
+        }, window.location.href)
+    } else {
+
+    }
+
+    function wx_login(fn, url) {
+        if (getRequest() && getRequest().code) {
+            $('#code').html(getRequest().code)
+            $('input').val(getRequest().code)
+            //alert(getRequest().code)
+
+        } else {
+            window.location.replace(
+                'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxe24d8d2690f536f9&redirect_uri=' + url + '&response_type=code&scope=snsapi_userinfo&state=STATE&connect_redirect=1#wechat_redirect'
+            )
+        }
+    }
+</script>
+
+
+</html>

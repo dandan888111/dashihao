@@ -1,0 +1,112 @@
+
+.wp>div {
+    overflow: hidden;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #F2F2F2;
+}
+.header-wrap{
+    overflow: hidden;
+    margin-top:0.2rem;
+}
+.header-wrap img{
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 0.7rem;
+}
+.header-wrap .name{
+    display: block;
+    height: 0.7rem;
+    margin-left: 0.15rem;
+    text-align: left;
+    line-height: 0.7rem;
+}
+.money-wrap .box{
+    width: 3.31rem;
+    overflow: hidden;
+    margin: 0.2rem 0 0 0.02rem;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 2px 10px 0px rgba(21,11,56,0.15);
+    border-radius: 0.08rem;
+}
+.money-wrap a{
+    width: 33%;
+    height: 1.1rem;
+    display: block
+}
+.money-wrap a p{
+    margin: 0.2rem 0;
+    text-align: center
+}
+.money-wrap a span{
+     display: inline-block;
+     width: 100%;
+     text-align: center
+}
+.extend-wrap .header{
+    margin-top: 0.2rem;
+    overflow: hidden;
+}
+.extend-wrap .header .change-btn{
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.2rem;
+    padding-left: 0.3rem;
+    background: url(../img/change.png) left center no-repeat;
+    background-size: contain;
+}
+.extend-wrap .des {
+    display: inline-block;
+    width: 3.35rem;
+    margin: 0.15rem 0;
+}
+.extend-wrap .copy-btn{
+    display: inline-block;
+    width: 3.35rem;
+    height: 0.45rem;
+    background:rgba(255,77,79,1);
+    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.2);
+    border-radius: 0.24rem;
+    text-align: center;
+    line-height: 0.45rem;
+}
+.extend-wrap.image-extend .save-image{
+    width: 3.15rem;
+    height: 5.06rem;
+    margin: 0 auto;
+    display: block;
+}
+.extend-wrap.image-extend .line{
+    width: 3.35rem;
+    height:1px;
+    margin-top: 0.3rem;
+    border-bottom: 1px solid #EDEDED; 
+}
+.extend-wrap.image-extend .save-des{
+    width: 1.54rem;
+    height: 0.22rem;
+    margin: -0.1rem auto 0.2rem;
+    background: #fff;
+    line-height: 0.22rem;
+    text-align: center
+}
+.promote-data-btn{
+    display: inline-block;
+    width: 3.35rem;
+    height: 0.45rem;
+    background: #333;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    border-radius: 0.24rem;
+    text-align: center;
+    line-height: 0.45rem;
+    margin-bottom: 0.2rem;
+}
+.promote-url{
+    display: inline-block;
+    margin: 0.15rem 0;
+    text-decoration: underline;
+}
+.tips{
+    width:1.5rem;
+    margin: 2rem auto 0;
+    text-align: center;
+}

@@ -1,0 +1,189 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout:none; /*系统默认菜单被禁用*/
+    -webkit-user-select:none; /*webkit浏览器*/
+    -khtml-user-select:none; /*早期浏览器*/
+    -moz-user-select:none;/*火狐*/
+    -ms-user-select:none; /*IE10*/
+    user-select:none;
+}
+input,textarea {
+    -webkit-user-select:auto; /*webkit浏览器*/
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+html, body{
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    cursor :pointer;
+    font-size: 16px;
+    color: #000;
+    font-family: arial, sans-serif;
+}
+a{
+    color:#fff;
+    text-decoration: none;
+}
+input:focus {
+    outline: none
+}
+/*不换行，显示引号*/
+.text_ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+.text_ellipsis_2{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    text-align:left;
+}
+
+.cl333{
+    color: #333;
+}
+.cl666{
+    color: #666;
+}
+.clfff{
+    color: #fff
+}
+.cl-red{
+    color: #FF4D4F;
+}
+.cl-orange{
+    color: #FE7102;
+}
+.cl-blue{
+    color: #4A90E2;
+}
+.cl999{
+    color: #999;
+}
+.bg-red{
+    background: #FF4D4F;
+}
+.bg-orange{
+    background: #FE7102;
+}
+.bg-blue{
+    background: #4A90E2;
+}
+.fz10{
+    font-size: 0.1rem
+}
+.fz12{
+    font-size: 0.12rem;
+}
+.fz14{
+    font-size: 0.14rem;
+}
+.fz16{
+    font-size: 0.16rem;
+}
+.fz18{
+    font-size: 0.18rem;
+}
+.fz20{
+    font-size: 0.2rem;
+}
+.fz24{
+    font-size: 0.24rem;
+}
+.fz36{
+    font-size: 0.36rem;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.margin-0-auto{
+    margin: 0 auto;
+}
+
+
+.page-header{
+    width:100%;
+    height: 0.4rem;
+    position: relative;
+    overflow: hidden;
+    clear: both;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.05);
+}
+.page-header .back{
+    width: 0.14rem;
+    height: 0.25rem;
+    position: absolute;
+    left: 0.1rem;
+    top: 0.08rem;
+}
+
+.page-header .page-title{
+    width:100%;
+    height: 0.4rem;
+    display: block;
+    margin: 0 auto;
+    line-height: 0.4rem;
+    text-align: center
+}
+
+.wp{
+    padding: 0 0.2rem;
+}
+
+/* 弹窗 */
+.bg-mask{
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index: 2;
+    background:rgba(0,0,0,1);
+    opacity:0.49920000000000003;
+}
+.confirm-box{
+    position: absolute;
+    left: 0.5rem;
+    top: 2.65rem;
+    width: 2.78rem;
+    z-index: 3;
+    background: #Fff;
+    border-radius:10px;
+}
+.confirm-box h4{
+    margin: 0.1rem auto 0.1rem;
+    text-align: center;
+    font-weight: normal;
+}
+.confirm-box p{
+    width: 2.37rem;
+    margin: 0 auto 0.2rem;
+    text-align: center;
+}
+.confirm-box span{
+    display: inline-block;
+    width: 2.78rem;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid #F2F2F2;
+}
+.confirm-box .teacher-name{
+    font-weight: bold;
+}

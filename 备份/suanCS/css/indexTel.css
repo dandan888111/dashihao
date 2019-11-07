@@ -1,0 +1,126 @@
+@charset "UTF-8";
+*{
+  margin:0;
+  padding:0;
+  -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout:none; /*系统默认菜单被禁用*/
+  -webkit-user-select:none; /*webkit浏览器*/
+  -khtml-user-select:none; /*早期浏览器*/
+  -moz-user-select:none;/*火狐*/
+  -ms-user-select:none; /*IE10*/
+  user-select:none;
+  -webkit-overflow-scrolling: touch;
+}
+input,textarea {
+  -webkit-user-select:auto; /*webkit浏览器*/
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+html,body{
+  width: 100%;
+  height:100%;
+  background: #fff;
+}
+.bindNumber{
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background: url('../img/bkgT.png') no-repeat;
+  background-size: cover;
+}
+.bindNumberC,.bindNumberY{
+  width: calc(100% - .4rem);
+  height:2.83rem;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size: 0;
+}
+.bindNumberC>p:first-of-type{
+  font-size: .24rem;
+  line-height: .33rem;
+  color: #fff;
+  font-weight: 500;
+}
+.mobileNumber,.mobileCode{
+  border-bottom: .01rem solid #6ADCC3;
+  padding: .15rem .14rem;
+  margin-top: .43rem;
+  width: calc(100% - .28rem);
+}
+.mobileNumber>img,.mobileNumber>input,.mobileCode>img,.mobileCode>input,.mobileCode>span{
+  vertical-align: middle;
+}
+.mobileNumber>img,.mobileCode>img{
+  width: .19rem;
+  height:.22rem;
+  margin-right: .23rem;
+}
+.mobileNumber>input,.mobileCode>input{
+  background:transparent;
+  border: none;
+  outline:none ;
+  color:#fff;
+  font-size: .16rem;
+  line-height: .22rem;
+
+}
+.mobileCode{
+  margin-top: .34rem;
+}
+.mobileCode>input{
+    width: calc(100% - .19rem - .23rem - .94rem);
+}
+.mobileCode>span{
+  display: inline-block;
+  width: .94rem;
+  height:.17rem;
+  line-height: .17rem;
+  font-size: .12rem;
+  background: #6ADCC3;
+  color:#fff;
+  border-radius: .16rem;
+  text-align: center;
+  padding: .05rem 0;
+}
+input::-webkit-input-placeholder{
+  color:#fff;
+  font-size: .16rem;
+  line-height: .22rem;
+}
+.sendNumber{
+  font-size: .18rem;
+  line-height: .25rem;
+  color: #fff;
+  padding: .12rem 0;
+  text-align: center;
+  width: 100%;
+  border-radius: .25rem;
+  background: #6ADCC3;
+  margin-top: .3rem;
+}
+.mobileCode>.sendYyanzhengCode{
+  background: #BBBBBB;
+}
+
+/* 填写过手机号 */
+.bindNumberY{
+  height:(.78rem + .2rem + 1.03rem);
+  display: none;
+  text-align: center;
+}
+.bindNumberY>img{
+  width:1.03rem;
+  height:1.03rem;
+}
+.bindNumberY>p{
+  margin-top: .2rem;
+  font-size: .22rem;
+  line-height: .39rem;
+  color:#fff;
+  text-align: center;
+}

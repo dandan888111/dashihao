@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>大师好-分佣后台-我要提现</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <script>
+        var offWidth = window.screen.width / 3.75;
+        document.getElementsByTagName("html")[0].style.fontSize = offWidth + 'px';
+    </script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/back-advance.css">
+    <script src="../lib/jquery-1.11.3.min.js" charset="utf-8"></script>
+    <script src="../js/back-common.js"></script>
+</head>
+<body>
+    <div class="page-header">
+        <img src="../img/backB.png" class="back" action-type="back-history" />
+        <p class="page-title cl333 fz18">我要提现</p>
+    </div> 
+    <div class="wp">
+        <div class="header">
+            <span class="current cl333 fz16" action-type="select-advanceHeader">提现</span>
+            <span class="cl333 fz16" action-type="select-advanceHeader">提现记录</span>
+        </div>
+        <div class="content-box">
+            <div class="all-money margin-0-auto cl-red fz36"><span>16.23</span><span class="fz14">元</span></div>
+            <div class="des-1 margin-0-auto cl333 fz14">可提现</div>
+            <div class="advance-box">
+                <p class="cl333 fz16">微信提现</p>
+                <div class="list">
+                    <span value="6" class="current" action-type="select-money">6元</span>
+                    <span value="20" action-type="select-money">20元</span>
+                    <span value="30" class="mr-0" action-type="select-money">30元</span>
+                    <span value="50" action-type="select-money">50元</span>
+                    <span value="100" action-type="select-money">100元</span>
+                    <span value="200" class="mr-0" action-type="select-money">200元</span>
+                </div>
+            </div>
+            <div class="attention fz12">
+                注意事项 <br />
+                1、工作日到账，如果高峰期，可能延长到账，请耐心等待 <br />
+                2、提现到账查询，我的-提现记录，查看提现记录 <br />
+                3、如果有问题，请联系我们 <br />
+            </div>
+            <!-- 按钮不可点击 advance-btn 增加disable -->
+            <div class="advance-btn clfff fz18" action-type="advance">提现</div>
+        </div>
+        <div class="content-box" style="display: none">
+            <div class="all-money margin-0-auto cl-red fz36"><span>16666.23</span><span class="fz14">元</span></div>
+            <div class="des-1 margin-0-auto cl333 fz14">累积提现金额</div>
+            <div class="history-list">
+                <!-- 无提现记录 -->
+                <div class="no-advance-his fz18" style="display: none">
+                    <img src="../img/no-cash.png" />
+                    <p class="fz18">暂无提现记录</p>
+                </div>
+                <!-- 提现中intro增加ing -->
+                <div class="intro ing">
+                    <div class="fl">
+                        <p class="name">提现中</p>
+                        <span class="time fz10">2019-4-22 20:19:26</span>
+                    </div>
+                    <span class="money fr cl-333 fz14" >5.00元</span>
+                </div>
+                <div class="intro">
+                    <div class="fl">
+                        <p class="name">提现已到账</p>
+                        <span class="time fz10">2019-4-22 20:19:26</span>
+                    </div>
+                    <span class="money fr cl-333 fz14" >5.00元</span>
+                </div>
+                <div class="intro">
+                    <div class="fl">
+                        <p class="name">提现中</p>
+                        <span class="time fz10">2019-4-22 20:19:26</span>
+                    </div>
+                    <span class="money fr cl-333 fz14" >5.00元</span>
+                </div>
+                <div class="intro ing">
+                    <div class="fl">
+                        <p class="name">提现中</p>
+                        <span class="time fz10">2019-4-22 20:19:26</span>
+                    </div>
+                    <span class="money fr cl-333 fz14" >5.00元</span>
+                </div>
+                <div class="intro">
+                    <div class="fl">
+                        <p class="name">提现已到账</p>
+                        <span class="time fz10">2019-4-22 20:19:26</span>
+                    </div>
+                    <span class="money fr cl-333 fz14" >5.00元</span>
+                </div>
+                <div class="intro">
+                    <div class="fl">
+                        <p class="name">提现中</p>
+                        <span class="time fz10">2019-4-22 20:19:26</span>
+                    </div>
+                    <span class="money fr cl-333 fz14" >5.00元</span>
+                </div>
+                <div class="intro ing">
+                    <div class="fl">
+                        <p class="name">提现中</p>
+                        <span class="time fz10">2019-4-22 20:19:26</span>
+                    </div>
+                    <span class="money fr cl-333 fz14" >5.00元</span>
+                </div>
+                <div class="intro">
+                    <div class="fl">
+                        <p class="name">提现已到账</p>
+                        <span class="time fz10">2019-4-22 20:19:26</span>
+                    </div>
+                    <span class="money fr cl-333 fz14" >5.00元</span>
+                </div>
+                <div class="intro">
+                    <div class="fl">
+                        <p class="name">提现中</p>
+                        <span class="time fz10">2019-4-22 20:19:26</span>
+                    </div>
+                    <span class="money fr cl-333 fz14" >5.00元</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-mask" node-type="dialog-mask" style="display: none"></div>
+    <div class="confirm-box" node-type="dialog-mask" style="display: none">
+        <h4 class="cl333 fz18">提现成功</h4>
+        <p class="cl666 fz14">提现申请后1～3小时到账你的微信钱包，请耐心等待</p>
+        <span class="cl-red fz16" action-type="close-dialog">我知道了</span>
+    </div>
+</body>
+<script src="../js/back-common.js"></script>
+<script src="../js/back-advance.js"></script>
+</html>             

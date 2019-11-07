@@ -1,0 +1,104 @@
+.family-box{
+    margin: 0.15rem auto 0;
+    border-bottom: 1px solid #f2f2f2; 
+}
+.family-box h4{
+    font-weight: normal;
+    margin-bottom: 0.2rem;
+}
+.family-box .code{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+.family-box.my-code{
+    position: relative;
+    
+}
+.family-box .code-copy-btn{
+    display: inline-block;
+    width: 0.78rem;
+    height: 0.29rem; 
+    position: absolute;
+    right: 0;
+    bottom: 0.2rem;
+    border-radius:15px;
+    border:1px solid rgba(178,178,178,1);
+    text-align: center;
+    line-height: 0.29rem;
+}
+
+
+
+
+
+
+.family-box .list{
+    width: 3.35rem;
+    height: 0.45rem;
+    margin-bottom: 0.2rem;
+}
+.family-box .input{
+    width: 2.50rem;
+    height: 0.46rem;
+    padding-left: 0.15rem; 
+    margin-bottom: 0.2rem;
+    display: inline-block;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 2px 10px 0px rgba(50,64,87,0.15);
+    border-radius:8px;
+    border: none;
+}
+.family-box .bind-btn {
+    display: inline-block;
+    width: 0.6rem;
+    height:0.46rem;
+    background: #FF4D4F;
+    color: #fff;
+    margin-left: 0.1rem;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 0.46rem;
+}
+.family-box .list img{
+    display: inline-block;
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 0.45rem;
+}
+.family-box .list span{
+    display: inline-block;
+    height: 0.45rem;
+    line-height: 0.45rem;
+
+}
+.family-box .list span.name{
+    margin-left: 0.15rem
+}
+
+.family-box .more p{
+    text-align: center
+}
+.family-box .more img{
+    display: block;
+    width: 0.19rem;
+    height: 0.19rem;
+    margin: 0.04rem auto 0.2rem;
+}
+
+
+/* 无徒弟 无徒孙 */
+.family-box  .no-data{
+    margin-bottom: 0.2rem;
+}
+.family-box .no-data img{
+    display: block;
+    width: 0.95rem;
+    height:1.1rem;
+    margin: 0.2rem auto 0.2rem;
+}
+.family-box .no-data p{
+    margin: 0 auto;
+    text-align: center;
+    color: #BBBBBB;
+}

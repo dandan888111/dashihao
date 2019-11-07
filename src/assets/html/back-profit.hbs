@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>大师好-分佣后台-我的收益</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <script>
+        var offWidth = window.screen.width / 3.75;
+        document.getElementsByTagName("html")[0].style.fontSize = offWidth + 'px';
+    </script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/back-profit.css">
+    <script src="../lib/jquery-1.11.3.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="page-header">
+        <img src="../img/backB.png" class="back" action-type="back-history" />
+        <p class="page-title cl333 fz18">我的收益</p>
+    </div>
+    <h4 class="cl333 fz18">你的当前收益</h4>
+    <p class="money cl-red fz36">986.36<span class="fz14">元</span></p>
+    <p class="des-1 cl333 fz16">收益明细</p>
+    <div class="list" >
+        <p class="date cl999 fz16">2019-4-15</p>
+        <div class="intro wp">
+            <div class="fl">
+                <!-- 师徒使用bg-orange  徒孙使用bg-red 退款使用bg-blue -->
+                <p class="name"><b class="cl333 fz14">美少女</b> <span class="bg-orange clfff fz12">师徒</span><span class="bg-red clfff fz12">徒孙</span><span class="bg-blue clfff fz12">退款</span></p>
+                <span class="time fz14">2019-4-22 20:19:26</span>
+            </div>
+            <span class="money fr cl-red fz14" >1.00元</span>
+        </div>
+        <!--  已经退款，在intro后加上isback -->
+        <div class="intro wp isback">
+            <div class="fl">
+                <p class="name"><b class="cl333 fz14">美少女</b> <span class="bg-blue clfff fz12">退款</span></p>
+                <span class="time fz14">2019-4-22 20:19:26</span>
+            </div>
+            <span class="money fr cl-red fz14" >1.00元</span>
+        </div>
+        <div class="intro wp">
+            <div class="fl">
+                <p class="name"><b class="cl333 fz14">美少女</b> <span class="bg-orange clfff fz12">师徒</span><span class="bg-red clfff fz12">徒孙</span><span class="bg-blue clfff fz12">退款</span></p>
+                <span class="time fz14">2019-4-22 20:19:26</span>
+            </div>
+            <span class="money fr cl-red fz14" >1.00元</span>
+        </div>
+        <div class="intro wp">
+            <div class="fl">
+                <p class="name"><b class="cl333 fz14">美少女</b> <span class="bg-orange clfff fz12">师徒</span><span class="bg-red clfff fz12">徒孙</span><span class="bg-blue clfff fz12">退款</span></p>
+                <span class="time fz14">2019-4-22 20:19:26</span>
+            </div>
+            <span class="money fr cl-red fz14" >1.00元</span>
+        </div>
+    </div>
+    <div class="list">
+        <p class="date cl999 fz16">2019-4-15</p>
+        <div class="intro wp">
+            <div class="fl">
+                <p class="name"><b class="cl333 fz14">美少女</b> <span class="bg-orange clfff fz12">师徒</span><span class="bg-red clfff fz12">徒孙</span><span class="bg-blue clfff fz12">退款</span></p>
+                <span class="time fz14">2019-4-22 20:19:26</span>
+            </div>
+            <span class="money fr cl-red fz14" >1.00元</span>
+        </div>
+        <div class="intro wp">
+            <div class="fl">
+                <p class="name"><b class="cl333 fz14">美少女</b> <span class="bg-orange clfff fz12">师徒</span><span class="bg-red clfff fz12">徒孙</span><span class="bg-blue clfff fz12">退款</span></p>
+                <span class="time fz14">2019-4-22 20:19:26</span>
+            </div>
+            <span class="money fr cl-red fz14" >1.00元</span>
+        </div>
+        <div class="intro wp">
+            <div class="fl">
+                <p class="name"><b class="cl333 fz14">美少女</b> <span class="bg-orange clfff fz12">师徒</span><span class="bg-red clfff fz12">徒孙</span><span class="bg-blue clfff fz12">退款</span></p>
+                <span class="time fz14">2019-4-22 20:19:26</span>
+            </div>
+            <span class="money fr cl-red fz14" >1.00元</span>
+        </div>
+    </div> 
+
+    <div class="no-profit fz18" style="display: none">
+        <img src="../img/no-money.png" />
+        <p class="fz18">暂无收益</p>
+    </div>
+</body>
+<script src="../js/back-common.js"></script>
+<script src="../js/back-profit.js"></script>
+</html>
